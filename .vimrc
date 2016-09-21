@@ -17,6 +17,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()                                                                
 " Any plugin here                                                                  
 Plugin 'scrooloose/syntastic'                                                      
+Plugin 'rust-lang/rust.vim'
 call vundle#end()                                                                  
 filetype plugin indent on  
 
@@ -33,8 +34,8 @@ let g:syntastic_c_remove_include_errors = 1
 let g:syntastic_python_pylint_post_args = '--msg-template="{path}:{line}:{column}:{C}: [{symbol} {msg_id}] {msg}" --ignored-classes=Config --errors-only'
 let b:syntastic_cpp_cflags = ' -std=c++11' 
 
-let g:clang_debug=1
-let g:clang_library_path="/usr/local/lib"
+"let g:clang_debug=1
+"let g:clang_library_path="/usr/local/lib"
 
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.\+/
