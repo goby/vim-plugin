@@ -40,6 +40,9 @@ let b:syntastic_cpp_cflags = ' -std=c++11'
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.\+/
 
+"add rust toml
+au BufRead,BufNewFile *.toml set filetype=cfg
+
 if exists('+colorcolumn')
   highlight ColorColumn ctermbg=darkblue
   set colorcolumn=80
