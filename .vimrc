@@ -18,6 +18,7 @@ call vundle#begin()
 " Any plugin here                                                                  
 Plugin 'scrooloose/syntastic'                                                      
 Plugin 'rust-lang/rust.vim'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()                                                                  
 filetype plugin indent on  
 
