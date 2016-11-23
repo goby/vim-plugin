@@ -42,7 +42,8 @@ let b:syntastic_cpp_cflags = ' -std=c++11'
 "match OverLength /\%81v.\+/
 
 "add rust toml
-au BufRead,BufNewFile *.toml set filetype=cfg
+au BufNewFile,BufRead *.toml set filetype=cfg
+au BufNewFile,BufRead *.cpp,*.cc,*.hh,*.h set syntax=cpp11
 
 if exists('+colorcolumn')
   highlight ColorColumn ctermbg=darkblue
