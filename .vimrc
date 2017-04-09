@@ -19,6 +19,9 @@ call vundle#begin()
 Plugin 'scrooloose/syntastic'                                                      
 Plugin 'rust-lang/rust.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
+Plugin 'uarun/vim-protobuf'
+Plugin 'vim-scripts/BufOnly.vim'
 call vundle#end()                                                                  
 filetype plugin indent on  
 
