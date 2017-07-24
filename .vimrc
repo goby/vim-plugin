@@ -2,6 +2,7 @@ syntax on
 set nocompatible
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
+map <leader>r :NERDTreeFind<CR>
 
 let Tlist_Use_Right_Window = 1
 set st=4
@@ -22,6 +23,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'uarun/vim-protobuf'
 Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'derekwyatt/vim-scala'
 call vundle#end()                                                                  
 filetype plugin indent on  
 
