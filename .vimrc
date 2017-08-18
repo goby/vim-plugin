@@ -24,6 +24,8 @@ Plugin 'fatih/vim-go'
 Plugin 'uarun/vim-protobuf'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-lua-ftplugin'
 call vundle#end()                                                                  
 filetype plugin indent on  
 
