@@ -26,6 +26,7 @@ Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-lua-ftplugin'
+Plugin 'nikvdp/ejs-syntax'
 call vundle#end()                                                                  
 filetype plugin indent on  
 
