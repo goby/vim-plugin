@@ -53,6 +53,9 @@ let b:syntastic_cpp_cflags = ' -std=c++11'
 au BufNewFile,BufRead *.toml set filetype=cfg
 au BufNewFile,BufRead *.cpp,*.cc,*.hh,*.h set syntax=cpp11
 
+au FileType yaml set ts=2
+au FileType javascript set ts=2
+
 if exists('+colorcolumn')
   highlight ColorColumn ctermbg=darkblue
   set colorcolumn=80
