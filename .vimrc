@@ -1,4 +1,7 @@
 syntax on
+
+set backspace=indent,eol,start
+
 set nocompatible
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
@@ -27,6 +30,13 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-lua-ftplugin'
 Plugin 'nikvdp/ejs-syntax'
+Plugin 'digitaltoad/vim-pug'
+"Deoplete start
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'zchee/deoplete-go'
+"end
 call vundle#end()                                                                  
 filetype plugin indent on  
 
@@ -46,6 +56,12 @@ let b:syntastic_cpp_cflags = ' -std=c++11'
 "let g:clang_debug=1
 "let g:clang_library_path="/usr/local/lib"
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+let g:scratch_autohide = 1
+"let g:miniBufExplSplitBelow = 1
+
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.\+/
 
@@ -62,3 +78,4 @@ if exists('+colorcolumn')
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+set maxmempattern=102400

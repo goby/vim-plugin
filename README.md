@@ -1,6 +1,7 @@
-A Set of Plugins of VIM(>=7.4)
+A Set of Plugins of VIM(>=8.0)
 ======
-Include:
+
+Includes:
 
 * bufexplorer
 * cecuitl
@@ -11,5 +12,15 @@ Include:
 * minibufexpl
 * taglist
 * todolist
+* vim-go
+* deoplete.nvim
+* ...
 
-Checkout folders into $HOME/.vim/ then enjoy it.
+Checkout(recursive) folders into $HOME/.vim/ and link $HOME/.vim/.vimrc to
+$HOME/.vimrc then enjoy it.
+
+Or simply let bot do dirty things for you:
+
+```bash
+curl -sSL https://git.io/install-vim | bash -c
+```
